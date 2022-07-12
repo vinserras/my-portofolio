@@ -51,9 +51,7 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
-  margin: 0;
-}
+
 
 ul {
   margin: 0;
@@ -106,15 +104,15 @@ img {
   margin-right: var(--mb-2);
 }
 
-.l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
+  .l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  }
 
 /*===== NAV =====*/
 .nav {
@@ -268,8 +266,9 @@ img {
 }
 
 .about__img img {
-  width: 200px;
+  width: 250px;
   border-radius: .5rem;
+  height: 250px;
 }
 
 /* ===== SKILLS =====*/
@@ -318,7 +317,7 @@ img {
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-
+/*
 .skills__html {
   width: 95%;
 }
@@ -357,7 +356,7 @@ img {
 
 .skills__microsoft {
   width: 80%;
-}
+} */
 
 
 /* ===== WORK =====*/
@@ -379,26 +378,25 @@ img {
   transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+.work__img p{
+  color: black;
+  text-align: center;
 }
 
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.tools{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
 }
+
+.tools a{
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 5px;
+}
+
 
 /* ===== FOOTER =====*/
 .footer {
